@@ -15,5 +15,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *statusMessageLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *userIconImageView;
 
-
 @end

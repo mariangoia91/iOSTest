@@ -61,10 +61,10 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="nameLabel" destination="0Fv-an-K1j" id="9D5-Pr-SKQ"/>
-                <outlet property="statusIconImageView" destination="i3U-E3-Z6s" id="3qj-vW-xDq"/>
-                <outlet property="statusMessageLabel" destination="hwE-hw-eDh" id="3ae-6L-6GI"/>
-                <outlet property="userIconImageView" destination="FSr-x1-tup" id="ADp-4E-H3Q"/>
+                <outlet property="nameLabel" destination="0Fv-an-K1j" id="YLt-Ak-GY8"/>
+                <outlet property="statusIconImageView" destination="i3U-E3-Z6s" id="Wrc-jT-usC"/>
+                <outlet property="statusMessageLabel" destination="hwE-hw-eDh" id="1hC-tO-RVv"/>
+                <outlet property="userIconImageView" destination="FSr-x1-tup" id="Vor-66-GEa"/>
             </connections>
             <point key="canvasLocation" x="415.5" y="351"/>
         </tableViewCell>
