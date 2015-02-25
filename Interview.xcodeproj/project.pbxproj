@@ -200,6 +200,7 @@
 		AFEF3D181A9D3F6900F83292 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				AFEF3D361A9E6EA900F83292 /* Categories */,
 				AFEF3D2A1A9E687300F83292 /* WSManager.h */,
 				AFEF3D2B1A9E687300F83292 /* WSManager.m */,
 			);
@@ -214,6 +215,13 @@
 				AFEF3D271A9D434C00F83292 /* IUserTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		AFEF3D361A9E6EA900F83292 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
