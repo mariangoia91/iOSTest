@@ -65,7 +65,10 @@
                             <constraint firstAttribute="centerY" secondItem="O32-HT-Y8K" secondAttribute="centerY" id="iAQ-tx-1Md"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="All Contacts" id="2af-dR-6Ew"/>
+                    <navigationItem key="navigationItem" title="All Contacts" id="2af-dR-6Ew">
+                        <barButtonItem key="leftBarButtonItem" title="Groups" id="tyg-H6-mvt"/>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="q5O-ab-Ymj"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="O32-HT-Y8K" id="4aV-1K-P6S"/>
                     </connections>
@@ -93,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Second-->
+        <!--All Contacts nav controller-->
         <scene sceneID="BG2-3k-UCI">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DIb-93-Sgv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DIb-93-Sgv" userLabel="All Contacts nav controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TfX-OQ-kqb">

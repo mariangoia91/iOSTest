@@ -91,4 +91,8 @@ const CGFloat kContactCellHeight = 56.0;
     return kContactCellHeight;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 @end
