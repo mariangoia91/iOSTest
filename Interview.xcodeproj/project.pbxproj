@@ -22,6 +22,7 @@
 		AFEF3D2F1A9E68CF00F83292 /* IContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEF3D2E1A9E68CF00F83292 /* IContacts.m */; };
 		AFEF3D321A9E691D00F83292 /* IGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEF3D311A9E691D00F83292 /* IGroup.m */; };
 		AFEF3D351A9E69FF00F83292 /* IContact.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEF3D341A9E69FF00F83292 /* IContact.m */; };
+		AFEF3D3C1A9E702D00F83292 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEF3D3B1A9E702D00F83292 /* UIImage+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		AFEF3D311A9E691D00F83292 /* IGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGroup.m; sourceTree = "<group>"; };
 		AFEF3D331A9E69FF00F83292 /* IContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IContact.h; sourceTree = "<group>"; };
 		AFEF3D341A9E69FF00F83292 /* IContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IContact.m; sourceTree = "<group>"; };
+		AFEF3D3A1A9E702D00F83292 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		AFEF3D3B1A9E702D00F83292 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
 		F441D091F356EC4C018B7FB2 /* libPods-Interview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Interview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -220,8 +223,10 @@
 		AFEF3D361A9E6EA900F83292 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				AFEF3D3A1A9E702D00F83292 /* UIImage+Additions.h */,
+				AFEF3D3B1A9E702D00F83292 /* UIImage+Additions.m */,
 			);
-			name = Categories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +368,7 @@
 				AFEF3CF21A9D3F4000F83292 /* AppDelegate.m in Sources */,
 				AFEF3D321A9E691D00F83292 /* IGroup.m in Sources */,
 				AFEF3D231A9D413400F83292 /* IFirstViewController.m in Sources */,
+				AFEF3D3C1A9E702D00F83292 /* UIImage+Additions.m in Sources */,
 				AFEF3CEF1A9D3F4000F83292 /* main.m in Sources */,
 				AFEF3D241A9D413400F83292 /* ISecondViewController.m in Sources */,
 				AFEF3D281A9D434C00F83292 /* IUserTableViewCell.m in Sources */,
