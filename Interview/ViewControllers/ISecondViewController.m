@@ -15,6 +15,8 @@
 
 #import "IUserTableViewCell.h"
 
+#import "UIImage+Additions.h"
+
 static NSString * const kUserCellIdentifier = @"UserCellIdentifier";
 const CGFloat kContactCellHeight = 56.0;
 
@@ -59,6 +61,14 @@ const CGFloat kContactCellHeight = 56.0;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     IUserTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kUserCellIdentifier forIndexPath:indexPath];
+    
+    IGroup *currentGroup = [self.allContactGroups objectAtIndex:indexPath.section];
+    IContact *currentContact = [currentGroup.people objectAtIndex:indexPath.row];
+    
+    [cell.nameLabel setText:[NSString stringWithFormat:@"%@ %@", currentContact.firstName, currentContact.lastName]];
+    [cell.statusMessageLabel setText:currentContact.statusMessage];
+    [cell.statusIconImageView setImage:[UIImage imageForStatus:currentContact.statusIcon]];
+    [cell.userIconImageView setImage:[UIImage imageForAvatar:@""]];
     
     return cell;
 }
