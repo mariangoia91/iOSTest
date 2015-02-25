@@ -95,4 +95,14 @@ const CGFloat kContactCellHeight = 56.0;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+#pragma mark - Button actions
+
+- (IBAction)groupsButtonPressed:(id)sender {
+    // To be implemented
+}
+
+- (IBAction)addContactButtonPressed:(id)sender {
+    // To be implemented
+}
+
 @end

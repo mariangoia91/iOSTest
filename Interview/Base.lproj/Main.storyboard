@@ -66,8 +66,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="All Contacts" id="2af-dR-6Ew">
-                        <barButtonItem key="leftBarButtonItem" title="Groups" id="tyg-H6-mvt"/>
-                        <barButtonItem key="rightBarButtonItem" title="+" id="q5O-ab-Ymj"/>
+                        <barButtonItem key="leftBarButtonItem" title="Groups" id="tyg-H6-mvt">
+                            <connections>
+                                <action selector="groupsButtonPressed:" destination="8rJ-Kc-sve" id="lq5-ct-u0a"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="q5O-ab-Ymj">
+                            <connections>
+                                <action selector="addContactButtonPressed:" destination="8rJ-Kc-sve" id="lzm-Ru-Ay5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="O32-HT-Y8K" id="4aV-1K-P6S"/>
