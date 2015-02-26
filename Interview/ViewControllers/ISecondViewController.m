@@ -18,6 +18,7 @@
 #import "UIImage+Additions.h"
 
 static NSString * const kUserCellIdentifier = @"UserCellIdentifier";
+
 const CGFloat kContactCellHeight = 56.0;
 
 @interface ISecondViewController () <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
@@ -25,6 +26,9 @@ const CGFloat kContactCellHeight = 56.0;
     NSMutableArray  *_filteredContactGroups;
     BOOL            _isFiltered;
 }
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @property (nonatomic, strong) NSArray *allContactGroups;
 
@@ -34,7 +38,6 @@ const CGFloat kContactCellHeight = 56.0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     _filteredContactGroups = [NSMutableArray array];
     _isFiltered = NO;
@@ -43,11 +46,6 @@ const CGFloat kContactCellHeight = 56.0;
     [self.tableView setContentOffset:CGPointMake(0,44) animated:YES]; // Hide the search bar
     
     [self requestContacts];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Utils
@@ -115,13 +113,13 @@ const CGFloat kContactCellHeight = 56.0;
 }
 
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar {
-    searchBar.showsCancelButton = YES;
+    [searchBar setShowsCancelButton:YES animated:YES];
     
     return YES;
 }
 
 -(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar {
-    searchBar.showsCancelButton = NO;
+    [searchBar setShowsCancelButton:NO animated:YES];
     
     return YES;
 }
